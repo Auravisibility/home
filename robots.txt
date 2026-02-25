@@ -1,0 +1,10 @@
+# robots.txt for auravisibility.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://auravisibility.com/sitemap.xml
+
+# Crawl-delay 
+Crawl-delay: 1

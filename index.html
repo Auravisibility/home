@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Visibility - Get Your Business Recommended by AI | AI Visibility Optimization</title>
+    <meta name="description" content="Aura Visibility helps businesses appear in ChatGPT, Gemini, Claude, and other AI-generated answers. Specialized AI visibility optimization to ensure your company gets recommended when customers search for services like yours.">
+    <meta name="keywords" content="AI visibility, AI optimization, ChatGPT visibility, Gemini optimization, AI marketing, digital visibility, AI SEO, business AI presence">
+    <meta name="author" content="Aura Visibility">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://auravisibility.com">
+
+```
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://auravisibility.com">
+<meta property="og:title" content="Aura Visibility - Get Your Business Recommended by AI">
+<meta property="og:description" content="Make your business visible to AI systems. We optimize your presence so ChatGPT, Gemini, Claude, and other AI platforms recommend you to customers.">
+<meta property="og:image" content="https://auravisibility.com/og-image.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://auravisibility.com">
+<meta property="twitter:title" content="Aura Visibility - Get Your Business Recommended by AI">
+<meta property="twitter:description" content="Make your business visible to AI systems. We optimize your presence so ChatGPT, Gemini, Claude, and other AI platforms recommend you to customers.">
+<meta property="twitter:image" content="https://auravisibility.com/og-image.jpg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%234285f4;stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:%23a142f4;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23ea4335;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='45' fill='url(%23grad)'/%3E%3Cpath d='M 30 50 Q 50 25, 70 50 T 70 50' stroke='white' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='35' cy='45' r='3' fill='white'/%3E%3Ccircle cx='65' cy='45' r='3' fill='white'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    :root {
+        --primary: #4285f4;
+        --primary-light: #669df6;
+        --secondary: #1a1a1a;
+        --text: #202124;
+        --text-light: #5f6368;
+        --text-muted: #80868b;
+        --bg: #ffffff;
+        --bg-soft: #f8f9fa;
+        --bg-accent: #e8f0fe;
+        --border: #dadce0;
+        --gemini-blue: #4285f4;
+        --gemini-purple: #a142f4;
+        --openai-teal: #10a37f;
+        --gradient-primary: linear-gradient(135deg, #4285f4 0%, #a142f4 50%, #ea4335 100%);
+        --gradient-soft: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+    }
+
+    body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        line-height: 1.6;
+        color: var(--text);
+        background: var(--bg);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Sora', sans-serif;
+    }
+
+    /* Navigation */
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(20px) saturate(180%);
+        -webkit-backdrop-filter: blur(20px) saturate(180%);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        z-index: 1000;
+        padding: 1rem 0;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    nav.scrolled {
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+
+    .nav-container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-family: 'Sora', sans-serif;
+        font-size: 1.375rem;
+        font-weight: 600;
+        background: var(--gradient-primary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        letter-spacing: -0.02em;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 2.5rem;
+        list-style: none;
+        align-items: center;
+    }
+
+    .nav-links a {
+        color: var(--text-light);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 0.9375rem;
+        transition: color 0.2s ease;
+        letter-spacing: -0.01em;
+    }
+
+    .nav-links a:hover {
+        color: var(--primary);
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 120px 2rem 80px;
+        background: var(--gradient-soft);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 600px;
+        background: radial-gradient(ellipse at top, rgba(66, 133, 244, 0.08) 0%, transparent 60%);
+        pointer-events: none;
+    }
+
+    .hero-container {
+        max-width: 880px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 100px;
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--text-light);
+        margin-bottom: 1.5rem;
+        animation: fadeInUp 0.6s ease-out;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        line-height: 1.1;
+        letter-spacing: -0.03em;
+        color: var(--secondary);
+        animation: fadeInUp 0.6s ease-out 0.1s backwards;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        color: var(--text-light);
+        line-height: 1.5;
+        letter-spacing: -0.01em;
+        animation: fadeInUp 0.6s ease-out 0.2s backwards;
+    }
+
+    .hero p {
+        font-size: 1.125rem;
+        margin-bottom: 2.5rem;
+        color: var(--text-muted);
+        line-height: 1.7;
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+        animation: fadeInUp 0.6s ease-out 0.3s backwards;
+    }
+
+    .hero p.emphasis {
+        font-weight: 600;
+        color: var(--text);
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .cta-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        animation: fadeInUp 0.6s ease-out 0.4s backwards;
+    }
+
+    .btn {
+        padding: 0.875rem 2rem;
+        font-size: 1rem;
+        font-weight: 500;
+        border-radius: 100px;
+        text-decoration: none;
+        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+        border: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-family: 'Inter', sans-serif;
+        letter-spacing: -0.01em;
+    }
+
+    .btn-primary {
+        background: var(--secondary);
+        color: white;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    }
+
+    .btn-primary:hover {
+        background: #333;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
+        transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+        background: white;
+        color: var(--text);
+        border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+        background: var(--bg-soft);
+        border-color: var(--text-light);
+    }
+
+    /* Section Styles */
+    .section {
+        padding: 70px 2rem;
+    }
+
+    .section-soft {
+        background: var(--bg-soft);
+    }
+
+    .container {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .section-label {
+        display: inline-block;
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: var(--primary);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 1rem;
+    }
+
+    .section-title {
+        font-size: 2.75rem;
+        font-weight: 600;
+        margin-bottom: 1.25rem;
+        text-align: center;
+        color: var(--secondary);
+        letter-spacing: -0.02em;
+        line-height: 1.2;
+    }
+
+    .section-subtitle {
+        font-size: 1.25rem;
+        color: var(--text-light);
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 3rem;
+        line-height: 1.6;
+        letter-spacing: -0.01em;
+    }
+
+    /* Authority Bar */
+    .authority-bar {
+        padding: 50px 2rem;
+        background: white;
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+    }
+
+    .authority-bar p {
+        margin-bottom: 1.5rem;
+        font-size: 0.9375rem;
+        color: var(--text-muted);
+        text-align: center;
+        font-weight: 500;
+        letter-spacing: -0.01em;
+    }
+
+    .ai-platforms {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .ai-platform {
+        font-size: 1.125rem;
+        font-weight: 500;
+        padding: 0.875rem 1.75rem;
+        background: var(--bg-soft);
+        border: 1px solid var(--border);
+        border-radius: 100px;
+        color: var(--text);
+        transition: all 0.2s ease;
+        letter-spacing: -0.01em;
+    }
+
+    .ai-platform:hover {
+        background: var(--bg-accent);
+        border-color: var(--primary-light);
+        transform: translateY(-2px);
+    }
+
+    /* Problem Section */
+    .problem-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .problem-content h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        color: var(--secondary);
+        letter-spacing: -0.02em;
+        line-height: 1.2;
+    }
+
+    .problem-content p {
+        font-size: 1.125rem;
+        color: var(--text-light);
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+    }
+
+    .search-examples {
+        list-style: none;
+        margin: 2rem 0;
+    }
+
+    .search-examples li {
+        padding: 1rem 1.25rem;
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        margin-bottom: 0.75rem;
+        font-style: italic;
+        color: var(--text-light);
+        transition: all 0.2s ease;
+    }
+
+    .search-examples li:hover {
+        border-color: var(--primary-light);
+        background: var(--bg-accent);
+    }
+
+    .problem-highlight {
+        background: linear-gradient(135deg, rgba(66, 133, 244, 0.08) 0%, rgba(161, 66, 244, 0.08) 100%);
+        border: 1px solid rgba(66, 133, 244, 0.2);
+        padding: 3rem;
+        border-radius: 24px;
+        text-align: center;
+    }
+
+    .problem-highlight h3 {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+        color: var(--secondary);
+        letter-spacing: -0.02em;
+    }
+
+    .problem-highlight p {
+        font-size: 1.125rem;
+        line-height: 1.7;
+        margin-bottom: 0.75rem;
+        color: var(--text);
+    }
+
+    .problem-highlight .emphasis {
+        font-weight: 600;
+        font-size: 1.25rem;
+        color: var(--secondary);
+    }
+
+    /* How It Works */
+    .steps-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        margin-top: 2.5rem;
+    }
+
+    .step {
+        text-align: left;
+        padding: 2rem;
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+    }
+
+    .step:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+        border-color: var(--primary-light);
+    }
+
+    .step-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        background: var(--gradient-primary);
+        color: white;
+        border-radius: 12px;
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        font-family: 'Sora', sans-serif;
+    }
+
+    .step h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+        color: var(--secondary);
+        font-weight: 600;
+        letter-spacing: -0.01em;
+    }
+
+    .step p {
+        color: var(--text-light);
+        line-height: 1.6;
+        font-size: 0.9375rem;
+    }
+
+    /* Services List */
+    .services-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .service-card {
+        padding: 2rem;
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .service-card:hover {
+        border-color: var(--primary);
+        box-shadow: 0 8px 24px rgba(66, 133, 244, 0.12);
+        transform: translateY(-2px);
+    }
+
+    .service-icon {
+        width: 48px;
+        height: 48px;
+        background: var(--bg-accent);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.25rem;
+    }
+
+    .service-icon svg {
+        width: 24px;
+        height: 24px;
+        stroke: var(--primary);
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    .service-card h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+        color: var(--secondary);
+        font-weight: 600;
+        letter-spacing: -0.01em;
+    }
+
+    .service-card p {
+        color: var(--text-light);
+        line-height: 1.6;
+        font-size: 0.9375rem;
+    }
+
+    /* Features Grid */
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.25rem;
+        margin-top: 3rem;
+    }
+
+    .feature {
+        padding: 1.5rem;
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        transition: all 0.2s ease;
+    }
+
+    .feature:hover {
+        border-color: var(--primary-light);
+        background: var(--bg-accent);
+    }
+
+    .feature h4 {
+        font-size: 1rem;
+        margin-bottom: 0;
+        color: var(--text);
+        font-weight: 500;
+    }
+
+    /* Founder Section */
+    .founder-section {
+        max-width: 760px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .founder-section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        color: var(--secondary);
+        letter-spacing: -0.02em;
+    }
+
+    .founder-section p {
+        font-size: 1.125rem;
+        color: var(--text-light);
+        line-height: 1.7;
+        margin-bottom: 1.25rem;
+    }
+
+    .founder-section .emphasis {
+        font-weight: 600;
+        color: var(--text);
+    }
+
+    /* FAQ */
+    .faq-list {
+        max-width: 800px;
+        margin: 3rem auto 0;
+    }
+
+    .faq-item {
+        margin-bottom: 1rem;
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 2rem;
+        transition: all 0.2s ease;
+    }
+
+    .faq-item:hover {
+        border-color: var(--primary-light);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    .faq-item h3 {
+        font-size: 1.125rem;
+        margin-bottom: 0.75rem;
+        color: var(--secondary);
+        font-weight: 600;
+    }
+
+    .faq-item p {
+        color: var(--text-light);
+        line-height: 1.6;
+    }
+
+    /* Contact Form */
+    .contact-form {
+        max-width: 600px;
+        margin: 3rem auto 0;
+        background: white;
+        padding: 3rem;
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        color: var(--text);
+        font-size: 0.9375rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 0.875rem 1rem;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        font-size: 1rem;
+        font-family: 'Inter', sans-serif;
+        transition: all 0.2s ease;
+        background: var(--bg-soft);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-color: var(--primary);
+        background: white;
+        box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.1);
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 1rem;
+        background: var(--secondary);
+        color: white;
+        border: none;
+        border-radius: 100px;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        font-family: 'Inter', sans-serif;
+    }
+
+    .submit-btn:hover {
+        background: #333;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Footer */
+    footer {
+        background: var(--bg-soft);
+        border-top: 1px solid var(--border);
+        padding: 3rem 2rem 2rem;
+    }
+
+    .footer-content {
+        max-width: 1280px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer-brand h3 {
+        font-family: 'Sora', sans-serif;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        background: var(--gradient-primary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: 600;
+    }
+
+    .footer-brand p {
+        color: var(--text-light);
+        margin-bottom: 0.25rem;
+        font-size: 0.9375rem;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.875rem;
+    }
+
+    .footer-links a {
+        color: var(--text-light);
+        text-decoration: none;
+        transition: color 0.2s ease;
+        font-size: 0.9375rem;
+    }
+
+    .footer-links a:hover {
+        color: var(--primary);
+    }
+
+    .footer-bottom {
+        text-align: center;
+        padding-top: 2rem;
+        border-top: 1px solid var(--border);
+        color: var(--text-muted);
+        font-size: 0.875rem;
+    }
+
+    /* CTA Section */
+    .cta-section {
+        background: var(--gradient-soft);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .cta-section::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 400px;
+        background: radial-gradient(ellipse at bottom, rgba(161, 66, 244, 0.08) 0%, transparent 60%);
+        pointer-events: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+        .steps-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .services-list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .hero h1 {
+            font-size: 2.5rem;
+        }
+
+        .hero h2 {
+            font-size: 1.25rem;
+        }
+
+        .nav-links {
+            gap: 1.5rem;
+        }
+
+        .problem-grid {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .footer-content {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+        }
+
+        .steps-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .services-list {
+            grid-template-columns: 1fr;
+        }
+
+        .ai-platforms {
+            gap: 1rem;
+        }
+
+        .ai-platform {
+            font-size: 1rem;
+            padding: 0.75rem 1.25rem;
+        }
+    }
+
+    /* Smooth Scroll */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Selection */
+    ::selection {
+        background: rgba(66, 133, 244, 0.2);
+        color: var(--secondary);
+    }
+</style>
+```
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="nav">
+        <div class="nav-container">
+            <div class="logo">Aura Visibility</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+```
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-container">
+        <div class="hero-badge">
+            AI Visibility Optimization
+        </div>
+        <h1>Get Your Business Recommended by AI</h1>
+        <h2>Aura Visibility helps your company appear in ChatGPT, Gemini, Claude, and other AI answers when customers search for services like yours.</h2>
+        <p>AI is becoming the primary way customers discover businesses. If your company isn't showing up in AI answers, you're invisible to a rapidly growing share of your market.</p>
+        <p class="emphasis">We fix that.</p>
+        <div class="cta-buttons">
+            <a href="#contact" class="btn btn-primary">Get Started</a>
+            <a href="#how-it-works" class="btn btn-secondary">See How It Works</a>
+        </div>
+    </div>
+</section>
+
+<!-- Authority Bar -->
+<div class="authority-bar">
+    <div class="container">
+        <p>Optimized for visibility across leading AI platforms including:</p>
+        <div class="ai-platforms">
+            <div class="ai-platform">ChatGPT</div>
+            <div class="ai-platform">Gemini</div>
+            <div class="ai-platform">Claude</div>
+            <div class="ai-platform">Perplexity</div>
+            <div class="ai-platform">Google AI Overviews</div>
+        </div>
+    </div>
+</div>
+
+<!-- Problem Section -->
+<section class="section">
+    <div class="container">
+        <div class="problem-grid">
+            <div class="problem-content">
+                <h2>Your customers are using AI to find businesses. Are you showing up?</h2>
+                <p>Millions of people now ask AI directly:</p>
+                <ul class="search-examples">
+                    <li>"Best marketing agency for startups"</li>
+                    <li>"Best med spa near me"</li>
+                    <li>"Best CRM for small business"</li>
+                    <li>"Best financial advisor in Austin"</li>
+                </ul>
+            </div>
+            <div class="problem-highlight">
+                <h3>AI provides direct answers. Not search results.</h3>
+                <p>If your business isn't mentioned, you lose customers to competitors who are.</p>
+                <p class="emphasis">This is the new digital battlefield.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Solution Section -->
+<section class="section section-soft">
+    <div class="container">
+        <h2 class="section-title">We Make Your Business Visible to AI</h2>
+        <p class="section-subtitle">Aura Visibility specializes in optimizing your company's presence so AI systems recognize, trust, and recommend your business.</p>
+        <p class="section-subtitle">We systematically strengthen the signals AI models use to determine which companies to recommend.</p>
+        <p class="section-subtitle" style="font-weight: 600;">This increases your visibility at the exact moment customers are making decisions.</p>
+    </div>
+</section>
+
+<!-- How It Works -->
+<section id="how-it-works" class="section">
+    <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <div class="steps-grid">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Analysis</h3>
+                <p>We analyze how AI currently sees your business and identify gaps.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Optimization</h3>
+                <p>Your dedicated AI Visibility Operator strengthens your digital presence across key signals.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Expansion</h3>
+                <p>We build structured authority and visibility across trusted sources.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Monitoring</h3>
+                <p>We continuously monitor and improve your AI visibility over time.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Offer Section -->
+<section class="section section-soft">
+    <div class="container">
+        <h2 class="section-title">Your Dedicated AI Visibility Operator</h2>
+        <p class="section-subtitle">Each client is assigned a dedicated specialist who works to strengthen your presence across the digital ecosystem that AI systems rely on.</p>
+        <div class="features-grid">
+            <div class="feature">
+                <h4>Structured content optimization</h4>
+            </div>
+            <div class="feature">
+                <h4>Authority signal strengthening</h4>
+            </div>
+            <div class="feature">
+                <h4>Digital presence expansion</h4>
+            </div>
+            <div class="feature">
+                <h4>Visibility monitoring</h4>
+            </div>
+            <div class="feature">
+                <h4>Continuous improvement</h4>
+            </div>
+        </div>
+        <p class="section-subtitle" style="margin-top: 2.5rem; font-weight: 600;">Your operator works as an extension of your team.</p>
+    </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="section">
+    <div class="container">
+        <h2 class="section-title">AI Visibility Optimization</h2>
+        <p class="section-subtitle">We help your business appear in AI-generated answers when customers search for services in your category. Our process strengthens the signals AI systems use to evaluate and recommend businesses.</p>
+        <div class="services-list">
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </div>
+                <h3>AI Presence Analysis</h3>
+                <p>Comprehensive audit of your current visibility across AI systems</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                </div>
+                <h3>Digital Authority Strengthening</h3>
+                <p>Building trust signals that AI models recognize and value</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24">
+                        <line x1="18" y1="20" x2="18" y2="10"></line>
+                        <line x1="12" y1="20" x2="12" y2="4"></line>
+                        <line x1="6" y1="20" x2="6" y2="14"></line>
+                    </svg>
+                </div>
+                <h3>Structured Content Optimization</h3>
+                <p>Optimizing your digital content for AI comprehension</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                </div>
+                <h3>Digital Footprint Expansion</h3>
+                <p>Strategic expansion across platforms that matter to AI</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24">
+                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                        <polyline points="17 6 23 6 23 12"></polyline>
+                    </svg>
+                </div>
+                <h3>Visibility Monitoring</h3>
+                <p>Continuous tracking of your presence in AI responses</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24">
+                        <polyline points="23 4 23 10 17 10"></polyline>
+                        <polyline points="1 20 1 14 7 14"></polyline>
+                        <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                    </svg>
+                </div>
+                <h3>Continuous Optimization</h3>
+                <p>Ongoing refinement to maintain competitive advantage</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Founder Section -->
+<section id="about" class="section section-soft">
+    <div class="container">
+        <div class="founder-section">
+            <h2>About Aura Visibility</h2>
+            <p>Aura Visibility is a marketing agency focused exclusively on helping businesses appear in AI-generated answers.</p>
+            <p>As AI becomes the primary interface for customer discovery, businesses must adapt their digital presence accordingly.</p>
+            <p class="emphasis">Our mission is to ensure our clients remain visible, competitive, and recommended in the AI-driven economy.</p>
+            <h2 style="margin-top: 4rem;">Founded by Ollie Wade</h2>
+            <p>Aura Visibility was founded to help businesses adapt to the shift from traditional search engines to AI-driven discovery.</p>
+            <p>As AI becomes the primary interface between customers and businesses, visibility within AI answers is no longer optional—it is essential.</p>
+            <p>Aura Visibility exists to ensure businesses remain discoverable and competitive in this new environment.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Why Section -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Built for the AI-First Internet</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <h4>Specialized exclusively in AI visibility</h4>
+            </div>
+            <div class="feature">
+                <h4>Human operators amplified by advanced AI tools</h4>
+            </div>
+            <div class="feature">
+                <h4>Systematic, repeatable optimization process</h4>
+            </div>
+            <div class="feature">
+                <h4>Continuous monitoring and improvement</h4>
+            </div>
+            <div class="feature">
+                <h4>Built for long-term competitive advantage</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section section-soft">
+    <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <h3>What is AI visibility?</h3>
+                <p>AI visibility refers to how often and how prominently your business appears in AI-generated answers.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Why is this important?</h3>
+                <p>Customers are increasingly using AI instead of traditional search engines to find businesses.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How long does it take to see results?</h3>
+                <p>Improvements typically begin appearing within weeks, with continued strengthening over time.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How is this different from SEO?</h3>
+                <p>SEO focuses on search engine rankings. AI visibility focuses on being recommended directly by AI systems.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do I need technical knowledge?</h3>
+                <p>No. We handle everything.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section cta-section">
+    <div class="container">
+        <h2 class="section-title">Start Appearing in AI Answers</h2>
+        <p class="section-subtitle">Position your business for the future of customer discovery.</p>
+        <form class="contact-form" name="contact" method="POST" data-netlify="true" onsubmit="handleSubmit(event)">
+            <input type="hidden" name="form-name" value="contact">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" required>
+            </div>
+            <div class="form-group">
+                <label for="website">Website</label>
+                <input type="url" id="website" name="website" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <button type="submit" class="submit-btn">Get Started</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-brand">
+            <h3>Aura Visibility</h3>
+            <p>AI Visibility Optimization Agency</p>
+            <p>Founded by Ollie Wade</p>
+        </div>
+        <div class="footer-links">
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#faq">FAQ</a>
+            <a href="/privacy.html">Privacy Policy</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Aura Visibility. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    // Scroll effect for nav
+    window.addEventListener('scroll', function() {
+        const nav = document.getElementById('nav');
+        if (window.scrollY > 50) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    });
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        alert('Thank you for your interest! We will contact you shortly to begin strengthening your AI visibility.');
+        event.target.reset();
+    }
+
+    // Ensure navigation links work properly
+    document.addEventListener('DOMContentLoaded', function() {
+        const navLinks = document.querySelectorAll('.nav-links a');
+        
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Also handle CTA buttons
+        const ctaButtons = document.querySelectorAll('a[href^="#"]');
+        ctaButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                if (this.classList.contains('nav-links')) return;
+                
+                const href = this.getAttribute('href');
+                if (href.startsWith('#')) {
+                    e.preventDefault();
+                    const targetId = href.substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+    });
+</script>
+```
+
+</body>
+</html>
